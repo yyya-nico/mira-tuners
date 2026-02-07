@@ -53,20 +53,19 @@ const updateTuners = async () => {
                   <span>優先度</span>
                 </div>
                 <div class="users-body">${
-                tuner.users
+                  tuner.users
                   .map(
                     (user) => `
                     <div class="user-row">
-                      <div class="user-id">${user.id}</div>
-                      <div class="user-agent">${user.agent ?? '—'}</div>
-                      <div class="user-priority">${user.priority}</div>
+                    <div class="user-id">${user.id}</div>
+                    <div class="user-agent">${user.agent ?? '—'}</div>
+                    <div class="user-priority">${user.priority}</div>
                     </div>
                   `
                   )
                   .join('')
-                }</div>
-								</div>
-							</article>`
+                  }</div>
+				        </div>`
               : ''
 
 						return `
