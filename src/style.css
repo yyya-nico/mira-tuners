@@ -207,15 +207,7 @@ section {
 }
 
 .user-priority {
-  text-align: right;
   color: var(--muted);
-}
-
-.user-empty {
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.9rem;
-  padding: 1rem 0.4rem;
 }
 
 @keyframes fadeIn {
