@@ -71,22 +71,34 @@ section {
 
 .tuner-head {
   display: flex;
-  align-items: center;
   gap: 0.5rem;
 }
 
+.tuner-head h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
 .tuner-index {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.tuner-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-grow: 1;
   margin: 0;
   font-size: 0.85rem;
   color: var(--muted);
 }
 
-.tuner-head h2 {
-  margin: 0;
-  font-size: 1.25rem;
-}
-
-.type-row {
+.types {
   display: flex;
   gap: 0.4rem;
   flex-wrap: wrap;
@@ -102,10 +114,9 @@ section {
   color: var(--accent-2);
 }
 
-.status-row {
+.status {
   display: flex;
   gap: 0.5rem;
-  margin-inline-start: auto;
 }
 
 .chip {
@@ -141,6 +152,7 @@ section {
   background: var(--panel);
   padding: 0.2rem 0.5rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   gap: 0.5rem;
 }
@@ -161,6 +173,7 @@ section {
 }
 
 .command-meta {
+  margin-inline-start: auto;
   font-size: 0.82rem;
   color: var(--muted);
 }
@@ -222,7 +235,12 @@ section {
 }
 
 @media (max-width: 720px) {
-  .page {
+  main {
     padding: 1rem 3vw 2rem;
+  }
+
+  .tuner-head {
+    flex-direction: column;
+    gap: 0.3rem;
   }
 }
